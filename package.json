@@ -7,7 +7,7 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "build": "cp node_modules/modern-normalize/modern-normalize.css ./",
+    "build": "cp node_modules/modern-normalize/modern-normalize.css ./&&sass index.scss:index.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch index.scss:index.css"
   },

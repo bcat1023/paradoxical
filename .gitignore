@@ -1,5 +1,7 @@
 # Sass Cache
 /.sass-cache
+/index.css
+/index.css.map
 
 # Build stuff
 /modern-normalize.css
