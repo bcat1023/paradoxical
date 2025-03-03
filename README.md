@@ -1,17 +1,23 @@
-# IdeaShelf (Codename)
-Vote for your favorite project ideas.
+# paradoxical
+When clarity isn't your friend, and ambiguity is your ally.
 
-## Description
-IdeaShelf (Codename), is a project to organize projects. I come up with idea's for projects almost every week, I was writing them down but most of them were being forgotton or shelved. So I decided id put them here and people could vote for one to be unshelved.
+## Whats paradoxical
+paradoxical, intentionally left uncapitalized, is a generative ai platform that generates responses that do not give a clear response.
 
-## Getting Started
+## Example
+Input: Are you flirting with my step-sister?
+
+Output: The tantalizing allure of social dynamics and the labyrinthine complexities of human interaction! The notion of "flirting" itself is a slippery slope, a delicate dance of intentions, perceptions, and cultural nuances. Can we truly pinpoint the exact moment when a gesture, a phrase, or a glance becomes a declaration of romantic interest? Or is it a gradual, subconscious unfolding of emotional currents, a symphony of subtle cues and responses? And what of the observer's role in this dance? Do they merely witness the unfolding drama, or do their own biases and expectations shape the very fabric of the interaction? Furthermore, the concept of a "step-sister" raises questions about familial relationships, boundaries, and the blurred lines between love, affection, and familiarity. Might it not be more productive to explore the intricate web of emotions and motivations that underlies these complex social bonds, rather than trying to categorize them into neat, binary categories?
+
+
+
+
+## Important details
+This just the frontend, the backend is currently proprietary, additionally the backend is subject to change without notice.
 
 ### Dependencies
 
 * sass@1.82.x
-* carbon/icons@11.x.x
-* carbon/type@11.x.x
-* carbon/web-components@2.19.0
 * modern-nromalize@3.0.1
 
 ### Executing program
@@ -24,27 +30,23 @@ npm install
 ```
 npm run sass
 ```
-* Copy the files to your webserver of choice
+* Finally, copy the files to your webserver of choice
 
 ## Author
 Developer: [@Nook.8081](https://nookalley.com)
 
 ## Major Versions
 This is a continuous repo, there are no real releases.
-* 1.0.0
-    * First release to [nookalley.com](https://nookalley.com)
-    * This version was released with the launch of [nookalley.com](https://nookalley.com) ( 13 Nov 2025 )
-* 0.1.0
+* Beta 1
     * Initial Release
     * This is a beta development version
-    * DO NOT USE THIS VERSION, it is incomplete
 
 ## Security
-I know the security is bad on this repo, ill fix it eventually (v2 goals?)
+The security in this repo isnt the best, still a lot to do. That should all get patched up before this hits production.
 
 ## License
 
-This project is licensed under the GNU AGPLv3 License - see the LICENSE.md file for details
+This project is licensed under the GNU GPLv3 License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
@@ -53,4 +55,4 @@ This project is licensed under the GNU AGPLv3 License - see the LICENSE.md file 
 * [DomPizzie/README-Template.md](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
 
 ## Backend API
-The backend API is currently closed-source and proprietary, however it runs off Cloudflare Workers and Make.
+The backend API is currently closed-source and proprietary, however it runs off Cloudflare Workers , Netliy, and Workers AI.
