@@ -1,6 +1,9 @@
 # Sass Cache
 /.sass-cache
 
+# Build stuff
+/modern-normalize.css
+
 # Logs
 logs
 *.log
