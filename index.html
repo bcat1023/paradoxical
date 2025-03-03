@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+
+        Todo: Make search non case-senstive, finish error testing, disallow voting of user didnt select anything
+
+-->
+
+<head>
+    <title>paradoxical</title>
+    <link rel="icon" href="https://nookalley.com/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sass -->
+    <link rel="stylesheet" href="/index.css">
+
+    <!-- IBM Carbon Design System 11 -->
+    <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css" />
+    <script type="module"
+        src="https://1.www.s81c.com/common/carbon/web-components/version/v2.24.0/text-input.min.js"></script>
+    <script type="module"
+        src="https://1.www.s81c.com/common/carbon/web-components/version/v2.24.0/tile.min.js"></script>
+    <script type="module"
+        src="https://1.www.s81c.com/common/carbon/web-components/version/v2.24.0/search.min.js"></script>
+    <script type="module"
+        src="https://1.www.s81c.com/common/carbon/web-components/version/v2.24.0/button.min.js"></script>
+    <script type="module"
+        src="https://1.www.s81c.com/common/carbon/web-components/version/v2.24.0/loading.min.js"></script>
+    <script type="module"
+        src="https://1.www.s81c.com/common/carbon/web-components/version/v2.24.0/modal.min.js"></script>
+    <script type="module"
+        src="https://1.www.s81c.com/common/carbon/web-components/version/v2.24.0/progress-bar.min.js"></script>
+</head>
+
+<body class="cds-theme-zone-white">
+    <cds-modal preventCloseOnClickOutside="true" alert="true" id="offline-modal">
+        <cds-modal-header>
+            <cds-modal-heading>
+                The server can not be reached at this moment, please try again later.
+            </cds-modal-heading>
+        </cds-modal-header>
+        <cds-modal-body></cds-modal-body>
+    </cds-modal>
+    <div class="box" id="top">
+        <div class="boxCont">
+            <div class="title">
+                <h1>paradoxical</h1>
+                <h2>paradoxes on demand</h2>
+                <div class="definition">
+                    <p id="littleNote">Please wait...</p>
+                </div>
+            </div>
+        </div>
+        <div class="boxCont mobileItems">
+            <form>
+                <cds-text-input autocomplete="off" id="input" label="Input your prompt" helper-text="Paradoxical will make it into a paradox"
+                    autofocus="true" required="true" styles="cds-text-input"></cds-text-input>
+                <br>
+                <cds-button-set id="button-set">
+                    <cds-button id="reset">Start over</cds-button>
+                    <cds-button disabled='true' id="submit">Generate Paradox </cds-button>
+                </cds-button-set>
+            </form>
+            <br>
+            <cds-tile id="AI" class="AI">
+                <h3 id="q">Q</h3>
+                <p id="a">A</p>
+            </cds-tile>
+            <p class="footer" id="footer">Powered by Llama-3-8b-instruct</p>
+        </div>
+    </div>
+    <div class="generativePane" id="bottom">
+        <div class="generative" id="generative">
+            <cds-progress-bar label="Generating Paradox" helper-text="This will take a moment">
+            </cds-progress-bar>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
