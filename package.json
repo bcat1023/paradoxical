@@ -7,9 +7,9 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "build": "cp node_modules/modern-normalize/modern-normalize.css ./&&npm run sass",
+    "build": "cp node_modules/modern-normalize/modern-normalize.css ./",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass index.scss:index.css"
+    "sass": "sass --watch index.scss:index.css"
   },
   "author": "",
   "license": "ISC",

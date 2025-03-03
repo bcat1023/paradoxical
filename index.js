@@ -91,6 +91,7 @@ var submitButton = document.getElementById('submit')
 var input = document.getElementById('input')
 var top = document.getElementById('top')
 var footer = document.getElementById('footer')
+var flair = document.getElementById('flair')
 var generativePane = document.getElementById('bottom')
 resetButton.addEventListener("click", (event) => {
     input.value = '';
@@ -99,6 +100,7 @@ resetButton.addEventListener("click", (event) => {
     generativePane.style.transform = 'scale(1.8)';
     generativePane.style.zIndex = '-1';
     footer.style.opacity = '1';
+    flair.style.opacity = '0';
     responseBox.style.opacity = '0';
     responseBox.style.transform = 'scale(0.9)';
 });
@@ -114,12 +116,14 @@ submitButton.addEventListener("click", (event) => {
     input.setAttribute('readonly', 'true')
     input.setAttribute('disabled', 'true')
     document.getElementById('top').style.transform = 'scale(.8)';
+    document.getElementById('top').style.filter = 'blur(1.3px);';
 
     generativePane.style.opacity = '1';
     generativePane.style.transform = 'scale(0.95)';
 
     footer.style.opacity = '1';
 
+    flair.style.opacity = '1';
     responseBox.style.opacity = '0';
     responseBox.style.transform = 'scale(0.9)';
 
@@ -145,8 +149,11 @@ function returnGenerative(response) {
     input.removeAttribute('readonly')
     input.removeAttribute('disabled')
     document.getElementById('top').style.transform = 'scale(1)';
+    document.getElementById('top').style.filter = 'blur(0px);';
 
     footer.style.opacity = '0';
+
+    flair.style.opacity = '0';
 
     generativePane.style.opacity = '0';
     generativePane.style.transform = 'scale(1.8)';
