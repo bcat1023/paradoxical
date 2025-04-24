@@ -24,7 +24,7 @@ async function authorize() {
         if (typeof (Storage) !== "undefined") {
             try {
                 const options = { method: 'POST' };
-                const response = await fetch(`https://${domain}/auth/register?AppVersion=${navigator.appVersion}&Platform=${navigator.platform}&UserAgent=${navigator.userAgent}&Vendor=${navigator.vendor}&Key=77miso`, options);
+                const response = await fetch(`https://${domain}/auth/register?AppVersion=${navigator.appVersion}&Platform=${navigator.platform}&UserAgent=${navigator.userAgent}&Vendor=${navigator.vendor}&Key=sequentialdogs`, options);
                 const data = await response.json();
                 return localStorage.setItem("authKey", data.authKey); // Set key from server to localStorage
                 // Fully Authorized
