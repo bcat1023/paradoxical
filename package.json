@@ -4,7 +4,7 @@
     "sass": "^1.82.0"
   },
   "name": "ideashelf",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "index.js",
   "scripts": {
     "build": "cp node_modules/modern-normalize/modern-normalize.css ./&&sass index.scss:index.css",
