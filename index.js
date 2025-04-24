@@ -50,7 +50,7 @@ async function submit() {
     try { await authorize() } catch (error) { crashHandler(); console.error(error) };
     try {
         const options = { method: 'POST' };
-        const response = await fetch(`https://${domain}/generate?AuthKey=${localStorage.getItem("authKey")}&Key=77miso&lie=${input.value}`, options)
+        const response = await fetch(`https://${domain}/generate?AuthKey=${localStorage.getItem("authKey")}&Key=sequentialdogs&lie=${input.value}`, options)
         const data = await response.json();
         return returnGenerative(data.response)
     } catch (error) {
